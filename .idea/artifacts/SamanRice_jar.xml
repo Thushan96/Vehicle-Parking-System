@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SamanRice:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SamanRice_jar</output-path>
+    <root id="archive" name="SamanRice.jar">
+      <element id="module-output" name="SamanRice" />
+    </root>
+  </artifact>
+</component>

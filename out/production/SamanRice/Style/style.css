@@ -1,0 +1,18 @@
+.ParkingMain{
+-fx-background-image: url("../Assets/img3.jpg");
+-fx-background-size: 100%100%;
+}
+.MangementBtn{
+    -fx-background-color: gainsboro;
+}
+.parkBtn{
+    -fx-background-color:gold ;
+}
+.loginBtn{
+    -fx-background-color: darkgrey;
+    -fx-background-radius: 50;
+}
+
+.combo-box{
+    -fx-prompt-text-fill: black;
+}

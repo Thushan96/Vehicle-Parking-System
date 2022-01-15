@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="563.0" prefWidth="752.0" style="-fx-background-color: #74b9ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="8.0" layoutY="17.0" prefHeight="32.0" prefWidth="101.0" text="Vehicle Number">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="268.0" layoutY="17.0" prefHeight="32.0" prefWidth="87.0" text="Vehicle Type">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="8.0" layoutY="65.0" prefHeight="32.0" prefWidth="116.0" text="Maximum Weight">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="495.0" layoutY="17.0" prefHeight="32.0" prefWidth="109.0" text="No of Passengers">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="VnoBtn" layoutX="122.0" layoutY="17.0" prefHeight="32.0" prefWidth="124.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="WeightBtn" layoutX="124.0" layoutY="65.0" prefHeight="32.0" prefWidth="124.0" style="-fx-background-radius: 50;" />
+      <TextField fx:id="PassegerBtn" layoutX="614.0" layoutY="17.0" prefHeight="32.0" prefWidth="124.0" style="-fx-background-radius: 50;" />
+      <Button fx:id="AddVehicleBtn" layoutX="578.0" layoutY="65.0" mnemonicParsing="false" onAction="#AddVehicleAction" prefHeight="39.0" prefWidth="160.0" style="-fx-background-radius: 50;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="CancelBtn" layoutX="444.0" layoutY="62.0" mnemonicParsing="false" onAction="#CancelButtonAction" prefHeight="39.0" prefWidth="116.0" style="-fx-background-radius: 50;" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="Vehicletable" layoutY="113.0" prefHeight="465.0" prefWidth="752.0">
+        <columns>
+          <TableColumn fx:id="VnoClmn" prefWidth="143.0" text="Vehicle Number" />
+          <TableColumn fx:id="VtypeClmn" prefWidth="156.0" text="Vehicle type" />
+            <TableColumn fx:id="MaxWclmn" prefWidth="157.0" text="Maximum Weight" />
+            <TableColumn fx:id="Passengerclmn" prefWidth="183.0" text="Number of Passengers" />
+            <TableColumn fx:id="Deleteclmn" prefWidth="111.0" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="VtypeCmb" layoutX="348.0" layoutY="17.0" prefHeight="32.0" prefWidth="116.0" promptText="Select" style="-fx-background-radius: 50;" />
+   </children>
+</AnchorPane>
